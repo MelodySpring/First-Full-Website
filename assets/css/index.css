@@ -79,6 +79,7 @@ nav a:hover {
 
 #aboutMe,
 #blog,
+#galleryText,
 .blogArticle {
     display: block;
     background-color: #68a4f1;
@@ -87,7 +88,8 @@ nav a:hover {
 
 #aboutMe h1,
 #blog h1,
-.blogArticle h1 {
+.blogArticle h1,
+#galleryText h1 {
     font-family: "Raleway", 'Times New Roman', Times, serif;
     font-size: 50px;
     font-weight: bold;
@@ -98,6 +100,7 @@ nav a:hover {
 
 #aboutMe p,
 #blog p,
+#galleryText,
 .blogArticle p {
     font-family: "Raleway", 'Times New Roman', Times, serif;
     font-size: 25px;
@@ -189,6 +192,23 @@ figcaption {
     width: auto;
     height: 300px;
 
+}
+
+.galleryImages {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* allows stacking */
+    margin: 20px 0;
+}
+
+.galleryImages img {
+    width: 300px;
+
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 
