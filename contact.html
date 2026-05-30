@@ -30,54 +30,73 @@
         </nav>
     </header>
 
-    <section class="contactContainer">
+    <main id="form">
+        <h1>Contact Me!</h1>
+        <section class="contactContainer">
 
-        <div class="contactText">
-            <h1>Contact Me</h1>
-            <p>
-                Contact Us
-                Whether you’re looking to purchase one of my images, book a personalised photoshoot, or simply ask a
-                question, I’m always happy to hear from you. Photography is at its best when it connects people — when a
-                moment, a landscape, or a fleeting expression resonates with someone else. If something in my work has
-                caught your eye, this is the place to reach out.
+            <div class="contactText">
 
-            </p>
-            <p>
-                If you’d like to buy a print, licence an image, or enquire about digital usage, just let me know which
-                photograph you’re interested in. I offer a range of print sizes, finishes, and bespoke options, and I’m
-                always happy to help you choose the right format for your space or project.
-            </p>
-            <p>
-                For those interested in booking a photoshoot, I provide tailored sessions designed around you — whether
-                it’s portraits, wildlife‑inspired creative work, product photography, or a shoot for your brand. Share a
-                little about what you have in mind, and I’ll get back to you with availability, ideas, and pricing.
-            </p>
-            <p>
-                You can contact me using the form on this page or by email at
-                <a href="mailto:john_melody@outlook.com">john_melody@outlook.com</a>. I aim to reply as quickly as
-                possible, usually within 24 hours. No question is too small — whether you’re planning something big or
-                just exploring possibilities, I’m here to help.
-            </p>
-            <p>
-                I look forward to hearing from you and creating something memorable together.
-            </p>
-        </div>
+                <p>
+                    Contact Us
+                    Whether you’re looking to purchase one of my images, book a personalised photoshoot, or simply ask a
+                    question, I’m always happy to hear from you. Photography is at its best when it connects people —
+                    when a
+                    moment, a landscape, or a fleeting expression resonates with someone else. If something in my work
+                    has
+                    caught your eye, this is the place to reach out.
 
-        <form class="contactForm">
-            <label for="name">Name</label>
-            <input type="text" id="name">
+                </p>
+                <p>
+                    If you’d like to buy a print, licence an image, or enquire about digital usage, just let me know
+                    which
+                    photograph you’re interested in. I offer a range of print sizes, finishes, and bespoke options, and
+                    I’m
+                    always happy to help you choose the right format for your space or project.
+                </p>
+                <p>
+                    For those interested in booking a photoshoot, I provide tailored sessions designed around you —
+                    whether
+                    it’s portraits, wildlife‑inspired creative work, product photography, or a shoot for your brand.
+                    Share a
+                    little about what you have in mind, and I’ll get back to you with availability, ideas, and pricing.
+                </p>
+                <p>
+                    You can contact me using the form on this page or by email at
+                    <a href="mailto:john_melody@outlook.com">john_melody@outlook.com</a>. I aim to reply as quickly as
+                    possible, usually within 24 hours. No question is too small — whether you’re planning something big
+                    or
+                    just exploring possibilities, I’m here to help.
+                </p>
+                <p>
+                    I look forward to hearing from you and creating something memorable together.
+                </p>
+            </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email">
+            <form class="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name">
 
-            <label for="message">Message</label>
-            <textarea id="message"></textarea>
+                <label for="number">Phone Number</label>
+                <input type="tel" id="number">
 
-            <button type="submit">Send message</button>
-        </form>
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <label for="enquiry">Enquiry Type</label>
+                <select id="enquiry">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="buy-image">Buy an Image</option>
+                    <option value="book-shoot">Book a Photoshoot</option>
+                    <option value="general">General Question</option>
+                </select>
 
-    </section>
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
 
+                <button type="submit">Send message</button>
+            </form>
+
+        </section>
+    </main>
 
     <footer>
         <img src="assets/images/logo.png" alt="My logo" />
