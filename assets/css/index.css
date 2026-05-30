@@ -198,7 +198,8 @@ figcaption {
 
 }
 
-.galleryImages {
+.galleryImages,
+.galleryImages2 {
     display: flex;
     justify-content: center;
     /* keeps rows centred */
@@ -225,12 +226,85 @@ figcaption {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-.galleryImages img:hover {
+.galleryImages img:hover,
+.galleryImages2 img:hover {
     transform: scale(1.5);
     transition: transform 0.4s ease;
     cursor: pointer;
 }
 
+.galleryImages2 img {
+    width: 400px;
+    height: auto;
+
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.contactContainer {
+    max-width: 1200px;
+    margin-top: 100px;
+    background-color: #68a4f1;
+    padding: 40px 20px;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.contactText {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #061e47;
+}
+
+.contactText h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contactForm {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactForm label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    padding: 14px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.contactForm textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contactForm button {
+    padding: 16px;
+    background-color: #2b6ad0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contactForm button:hover {
+    background-color: #1f4fa0;
+}
 
 
 footer {
@@ -249,6 +323,9 @@ footer {
     padding-top: 0;
 
 }
+
+
+
 
 
 
