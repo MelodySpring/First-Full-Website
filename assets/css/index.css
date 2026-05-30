@@ -26,11 +26,10 @@ header a {
     display: flex;
     align-items: center;
     align-content: center;
-    height: 100px;
     font-family: "Figtree", 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-size: 3vh;
     color: #061e47;
-    text-shadow: 3px 3px black;
+    text-shadow: 2px 2px black;
     transition: .3s;
     padding-left: 20px;
 }
@@ -61,7 +60,7 @@ nav {
 nav a {
     font-family: "Roboto", 'Times New Roman', Times, serif;
     color: #061e47;
-    font-size: 26px;
+    font-size: 3vh;
     font-weight: bold;
     transition: .3s;
 }
