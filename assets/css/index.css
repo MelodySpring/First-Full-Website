@@ -77,15 +77,17 @@ nav a:hover {
 }
 
 
-#aboutMe {
+#aboutMe,
+#blog,
+.blogArticle {
     display: block;
     background-color: #68a4f1;
     padding: 100px 0 30px 0;
-
-
 }
 
-#aboutMe h1 {
+#aboutMe,
+#blog,
+.blogArticle h1 {
     font-family: "Raleway", 'Times New Roman', Times, serif;
     font-size: 50px;
     font-weight: bold;
@@ -94,7 +96,9 @@ nav a:hover {
     color: #061e47;
 }
 
-#aboutMe p {
+#aboutMe,
+#blog,
+.blogArticle p {
     font-family: "Raleway", 'Times New Roman', Times, serif;
     font-size: 25px;
     font-weight: bold;
@@ -146,8 +150,25 @@ figcaption {
 }
 
 
+.blogArticle h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    color: #061e47;
+    font-weight: bold;
+}
 
+.blogImages {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 300px;
+    width: auto;
 
+    margin: 20px;
+
+}
 
 footer {
     display: flex;
