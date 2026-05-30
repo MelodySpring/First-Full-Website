@@ -6,6 +6,7 @@
 
 
 
+
 header {
     position: fixed;
     display: flex;
@@ -84,23 +85,31 @@ nav a:hover {
     display: block;
     background-color: #68a4f1;
     padding: 100px 0 30px 0;
+
+
 }
 
 #aboutMe h1,
 #blog h1,
-.blogArticle h1,
-#galleryText h1 {
+#galleryText h1,
+.blogArticle h1 {
     font-family: "Raleway", 'Times New Roman', Times, serif;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0;
+    margin-top: 0;
     color: #061e47;
 }
 
+
+
+
+
+
 #aboutMe p,
 #blog p,
-#galleryText,
+#galleryText p,
 .blogArticle p {
     font-family: "Raleway", 'Times New Roman', Times, serif;
     font-size: 25px;
@@ -170,10 +179,6 @@ figcaption {
     text-align: center;
     color: #061e47;
     font-weight: bolder;
-
-
-
-
     margin: 10px;
     padding-top: 10px;
 }
@@ -197,19 +202,29 @@ figcaption {
 .galleryImages {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    /* keeps rows centred */
+    gap: 40px;
+    /* cleaner spacing between images */
     flex-wrap: wrap;
-    /* allows stacking */
-    margin: 20px 0;
+    margin: 40px 0;
+}
+
+
+#mainGallery {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 2px;
 }
 
 .galleryImages img {
-    width: 300px;
-
-    height: 200px;
+    width: 100%;
+    max-width: 500px;
+    /* or 450px if you want tighter rows */
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
+
 
 
 footer {
