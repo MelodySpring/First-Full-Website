@@ -335,6 +335,26 @@ figcaption {
     background-color: #1f4fa0;
 }
 
+label[for="name"]::before {
+    content: "👤 ";
+}
+
+label[for="number"]::before {
+    content: "☎️ ";
+}
+
+label[for="email"]::before {
+    content: "📧 ";
+}
+
+label[for="enquiry"]::before {
+    content: "❓ ";
+}
+
+label[for="message"]::before {
+    content: "💭 ";
+}
+
 
 footer {
     display: flex;
