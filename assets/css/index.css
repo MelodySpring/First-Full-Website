@@ -80,6 +80,8 @@ nav a:hover {
     display: block;
     background-color: #68a4f1;
     padding: 125px 0 30px 0;
+    margin: 0;
+    /*THIS ADDED*/
 
 
 }
@@ -255,9 +257,11 @@ figcaption {
 /* CONTACT */
 
 .contactContainer {
-    max-width: 1200px;
+    max-width: 100%;
+    max-width: none;
     margin-top: 100px;
-    margin: 25px auto;
+    margin: 0 30px;
+    /* FORM WIDTH MARGINS */
     background-color: #68a4f1;
     padding: 40px 20px;
     display: flex;
@@ -268,6 +272,7 @@ figcaption {
 .contactText {
     font-family: "Raleway", sans-serif;
     flex: 3;
+    margin-right: 20px;
     font-size: 30px;
     line-height: 1.6;
     color: #061e47;
@@ -290,6 +295,7 @@ figcaption {
 
 .contactText p {
     margin-bottom: 25px;
+    text-align: justify;
 
 }
 
