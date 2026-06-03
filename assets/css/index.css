@@ -365,7 +365,7 @@
     }
 
     .five:hover {
-        transform: scale(1.75) translate(25%, 10%);
+        transform: scale(1.75) translate(20%, 10%);
         transition: transform 0.4s ease;
         cursor: pointer;
     }
@@ -377,7 +377,7 @@
     }
 
     .six:hover {
-        transform: scale(1.75) translate(-25%, -10%);
+        transform: scale(1.75) translate(-20%, -10%);
         transition: transform 0.4s ease;
         cursor: pointer;
     }
