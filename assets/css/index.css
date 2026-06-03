@@ -334,8 +334,8 @@
         cursor: pointer;
     }
 
-    .two:hover {
-        transform: :active(4);
+    .two:active {
+        transform: scale(4);
         transition: transform 0.4s ease;
         cursor: pointer;
     }
@@ -347,7 +347,7 @@
     }
 
     .three:active {
-        transform: scale(1.5) translate(-25%, -10%);
+        transform: scale(4) translate(-25%, -10%);
         transition: transform 0.4s ease;
         cursor: pointer;
     }
