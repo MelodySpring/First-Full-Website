@@ -292,6 +292,14 @@
         cursor: pointer;
     }
 
+    .galleryImages img:active,
+    .galleryImages2 img:hover {
+        transform: scale(4);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+
     .galleryImages2 img {
         width: auto;
         height: 300px;
