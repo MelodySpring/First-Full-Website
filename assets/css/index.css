@@ -285,19 +285,121 @@
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
 
-    .galleryImages img:hover,
+    /*
+    .galleryImages img:hover {
+        transform: scale(1.5);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+
+
     .galleryImages2 img:hover {
         transform: scale(1.5);
         transition: transform 0.4s ease;
         cursor: pointer;
     }
 
+
     .galleryImages img:active,
-    .galleryImages2 img:hover {
+    .galleryImages2 img:active {
         transform: scale(4);
         transition: transform 0.4s ease;
         cursor: pointer;
     }
+
+
+    .galleryImages2 img:active {
+        transform: scale(5);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+*/
+
+    .one:hover {
+        transform: scale(1.5) translate(25%, 10%);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .one:active {
+        transform: scale(4) translate(25%, 10%);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .two:hover {
+        transform: scale(1.5);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .two:hover {
+        transform: :active(4);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .three:hover {
+        transform: scale(1.5) translate(-25%, -10%);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .three:active {
+        transform: scale(1.5) translate(-25%, -10%);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .four:hover {
+        transform: scale(1.75) translate(25%, 10%);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .four:active {
+        transform: scale(4) translate(25%, 10%);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .five:hover {
+        transform: scale(1.75) translate(25%, 10%);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .five:active {
+        transform: scale(4) translate(25%, 10%);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .six:hover {
+        transform: scale(1.75) translate(-25%, -10%);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .six:active {
+        transform: scale(4) translate(-25%, -10%);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .seven:hover {
+        transform: scale(1.75) translate(-25%, -10%);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .seven:active {
+        transform: scale(4) translate(-25%, -10%);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
 
 
     .galleryImages2 img {
