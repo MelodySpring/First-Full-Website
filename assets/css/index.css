@@ -207,15 +207,6 @@
     }
 
 
-
-
-
-
-
-
-
-
-
     .blogArticle h2 {
         /* font-family: "Raleway", 'Times New Roman', Times, serif; VAR ADDED */
         font-family: var(--font-main);
@@ -241,7 +232,6 @@
     .blogImages img {
         width: auto;
         height: 300px;
-
     }
 
 
@@ -283,7 +273,8 @@
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
 
-    /*
+    /* ORIGINAL GALLERY FORMAT
+    
     .galleryImages img:hover {
         transform: scale(1.5);
         transition: transform 0.4s ease;
