@@ -780,4 +780,10 @@ footer img {
     .seven:hover {
         transform: scale(1.75) translate(-25%, -10%) !important;
     }
+
+    .galleryImages img:active,
+    .galleryImages2 img:active {
+        transform: scale(4) !important;
+    }
+
 }
