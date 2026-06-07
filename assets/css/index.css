@@ -3,14 +3,6 @@
     padding: 0;
 }
 
-/* THIS SHOULD SOLVE ISSUES I HAVE HAD WITH EDGE AS THE CONTENT MOVES ABOUT*/
-html,
-body {
-    overflow-x: hidden;
-}
-
-
-
 /*VARIABLES ADDED*/
 :root {
     --bg-color: #68a4f1;
@@ -203,7 +195,10 @@ figcaption {
 /* BLOG THE CONTENT OF THIS BLOG IS MY OWN WORK AND IT IS USED ON A CAMERA CLUB WEBSITE WHERE I AM WEBMASTER MELTON MOWBRAY PHOTOGRAPHIC SOCIETY*/
 
 #blog {
+    width: 100%;
     max-width: none;
+    margin: 0;
+
 }
 
 #blogPage {
