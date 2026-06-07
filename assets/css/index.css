@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/*VARIABLES ADDED*/
 :root {
     --bg-color: #68a4f1;
     --text-color: #061e47;
@@ -87,6 +88,9 @@ nav a:hover {
     transform: scale(1.2);
 }
 
+
+
+
 /* CODE FOR MULTIPLE PAGES */
 #aboutMe,
 #blog,
@@ -98,8 +102,6 @@ nav a:hover {
     background-color: var(--bg-color);
     padding: 125px 0 30px 0;
     margin: 0;
-    /*THIS ADDED*/
-
 
 }
 
@@ -162,7 +164,7 @@ nav a:hover {
     margin: 40px auto;
     width: 100%;
     max-width: 1750px;
-    /* border: 2px solid #061e47; VAR ADDED         ??????????????????????????? */
+    /* border: 2px solid #061e47; VAR ADDED */
     border: 2px solid var(--text-color);
     border-radius: 10px;
     padding: 30px;
@@ -192,6 +194,14 @@ figcaption {
 
 /* BLOG THE CONTENT OF THIS BLOG IS MY OWN WORK AND IT IS USED ON A CAMERA CLUB WEBSITE WHERE I AM WEBMASTER MELTON MOWBRAY PHOTOGRAPHIC SOCIETY*/
 
+#blog {
+    max-width: none;
+}
+
+#blogPage {
+    background-color: var(--bg-color);
+}
+
 .blogArticle {
 
     display: flex;
@@ -199,15 +209,24 @@ figcaption {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin: 40px auto;
     width: 100%;
-    max-width: 1750px;
-    /* border: 2px solid #061e47; VAR ADDED         ??????????????????????????? */
+    margin-bottom: 20px;
+    /* border: 2px solid #061e47; VAR ADDED     */
     border: 2px solid var(--text-color);
     border-radius: 10px;
     padding: 30px;
+    gap: 10px;
 }
 
+.blogArticle {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 30px;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+}
 
 .blogArticle h2 {
     /* font-family: "Raleway", 'Times New Roman', Times, serif; VAR ADDED */
@@ -219,6 +238,12 @@ figcaption {
     font-weight: bolder;
     margin: 10px;
     padding-top: 10px;
+}
+
+
+/*THIS ONLY STYLES THE SECOND BLOG ARTICLE CREATING A GAP BETWEEN*/
+.blogArticle+.blogArticle {
+    margin-top: 40px;
 }
 
 
@@ -567,17 +592,30 @@ footer img {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 
-    /* MAKE THE NAV FIT BETTER AND IMPROVE THE LOOK OF THE HEADER*/
+    /* MAKE THE NAV FIT BETTER AND IMPROVE THE LOOK OF THE HEADER SO IT GOES LIKE A COLUMN*/
     nav {
-        padding: 10px;
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 10px 0;
+        position: absolute;
+        top: 12vh;
+        left: 0;
+        width: 100%;
+        background-color: var(--alt-color);
     }
+
 
     nav a {
-        font-size: 2.2vh;
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #061e47;
     }
+
 
     .logo {
         font-size: 2.5vh;
@@ -585,12 +623,58 @@ footer img {
     }
 
 
-    /*STACKS THE IMAGES AND TEXT VERTICALLY AND CENTERS EVERYTHING*/
+    /* MAKE THE BOXES FIT PROPERLY ON THE PAGE */
+
+    #aboutMe,
+    #galleryText,
+    #blog,
+    #form {
+        width: 100%;
+        max-width: 100%;
+
+        padding-top: 400px;
+        box-sizing: border-box;
+    }
+
+
+
     #aboutMe1,
     #aboutMe2,
     #aboutMe3 {
         flex-direction: column;
         text-align: center;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* MAKES THE IMAGES A SUITABLE SIZE */
+    #aboutMe img {
+        height: 250px;
+        margin: 0px;
+    }
+
+    /* REDUCE THE SIZE OF THE TEXT */
+
+
+    #aboutMe h1 {
+        font-size: 40px;
+    }
+
+    #aboutMe p {
+        font-size: 22px;
+        padding: 15px;
+        margin: 10px;
+    }
+
+
+    /* THIS MAKES THE CONTACT FORM INTO A COLUMN AND ALIGNS CENTRALLY */
+    .contactContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
     }
 
 
@@ -599,17 +683,21 @@ footer img {
         padding: 20px;
     }
 
-    /*STACKS THE CONTEMT VERTICALLY AND REDUCES THE GAP FROM 60 to 30px TO IMPROVE THE LOOK*/
-    .contactContainer {
-        flex-direction: column;
-        gap: 30px;
+    /*THIS FORCES THE IMAGE WIDTH IN THE GALLERY AND BLOG*/
+    .galleryImages img,
+    .galleryImages2 img {
+        width: 300px;
     }
 
-    /*MAKES THE TEXT SMALLER AND REMOVES PADDING*/
-    .contactText {
-        font-size: 22px;
-        padding-right: 0;
+    .blogImages img {
+        width: 250px;
     }
+
+    /* THIS REDUCES THE GAP COMPARED TO DESKTOP*/
+    .contactContainer {
+        gap: 40px;
+    }
+
 
     /*REMOVES HOVER EFFECT ON MOBILES*/
     .galleryImages img:hover,
@@ -628,23 +716,7 @@ footer img {
     }
 }
 
-@media (max-width: 900px) {
 
-    /*THIS FORCES THE IMAGE WIDTH IN THE GALLERY AND BLOG*/
-    .galleryImages img,
-    .galleryImages2 img {
-        width: 300px;
-    }
-
-    .blogImages img {
-        width: 250px;
-    }
-
-    /* THIS REDUCES THE GAP COMPARED TO DESKTOP*/
-    .contactContainer {
-        gap: 40px;
-    }
-}
 
 /* THIS DISABLES THE TRANSLATE ON SMALLER SCREEN AND JUST MAKES THE IMAGE GROW A LITTLE*/
 @media (max-width: 1400px) {
