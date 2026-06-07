@@ -99,7 +99,7 @@ nav a:hover {
     display: block;
     /*background-color: #68a4f1; VAR ADDED*/
     background-color: var(--bg-color);
-    padding: 125px 0 30px 0;
+    padding: 150px 0 30px 0;
     margin: 0;
 
 }
@@ -722,7 +722,7 @@ footer img {
 
 
 /* THIS DISABLES THE TRANSLATE ON SMALLER SCREEN AND JUST MAKES THE IMAGE GROW A LITTLE*/
-@media (max-width: 1400px) {
+@media (max-width: 1399px) {
 
     .galleryImages img:hover,
     .galleryImages2 img:hover,
