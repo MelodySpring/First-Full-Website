@@ -8,7 +8,6 @@
     --bg-color: #68a4f1;
     --text-color: #061e47;
     --alt-color: #2b6ad0;
-
     --font-main: "Raleway", sans-serif;
     --font-other: "Figtree", 'Times New Roman', Times, serif;
 }
@@ -162,8 +161,9 @@ nav a:hover {
     display: flex;
     align-items: center;
     margin: 40px auto;
-    width: 100%;
-    max-width: 1750px;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-sizing: border-box;
     /* border: 2px solid #061e47; VAR ADDED */
     border: 2px solid var(--text-color);
     border-radius: 10px;
