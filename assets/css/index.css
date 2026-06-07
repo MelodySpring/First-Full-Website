@@ -4,11 +4,11 @@
 }
 
 /* THIS SHOULD SOLVE ISSUES I HAVE HAD WITH EDGE AS THE CONTENT MOVES ABOUT*/
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+html,
+body {
+    overflow-x: hidden;
 }
+
 
 
 /*VARIABLES ADDED*/
