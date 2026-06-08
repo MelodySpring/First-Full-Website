@@ -478,7 +478,7 @@ figcaption {
 
 .contactText p {
     margin-bottom: 10px;
-    text-align: justify;
+    text-align: left;
     padding: 0;
 
 }
@@ -683,6 +683,16 @@ footer img {
         gap: 40px;
     }
 
+    /*THIS MAKES THE FORM LABELS GO TO THE LEFT*/
+    .contactForm {
+        width: 100%;
+        max-width: 700px;
+        text-align: left;
+    }
+
+    .contactForm label {
+        text-align: left;
+    }
 
     /*REDUCES PADDING TO MAKE IT FIT BETTER*/
     .blogArticle {
