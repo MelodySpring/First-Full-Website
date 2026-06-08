@@ -646,8 +646,14 @@ footer img {
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
+        /* TURNS OFF THE BOX BORDER*/
+        border: none !important;
     }
 
+    .blogArticle {
+        /* TURNS OFF THE BOX BORDER*/
+        border: none !important;
+    }
 
     /* MAKES THE IMAGES A SUITABLE SIZE */
     #aboutMe img {
